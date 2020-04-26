@@ -1,0 +1,12 @@
+function bankPercent(p){
+let years = 0;
+let total = 1500;
+  let n = 0;
+do{
+//years = ((total - 1000)/p)/10 
+  n = (1000*(p/10));
+  years = (total - 1000)/n;
+}while (total >= 1500);
+return Math.round(years);
+}
+console.log(bankPercent(13));
