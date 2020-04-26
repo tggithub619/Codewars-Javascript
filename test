@@ -11,6 +11,16 @@ return Math.round(years);
 }
 console.log(bankPercent(13));
 
+function bankPercent(p){
+let years = 0;
+let total = 1000;
+ do{
+  total = 1000 * (p/100) + total;
+  years++;
+}while (total < 1500);
+  return Math.ceil(years);
+ }
+
 
 Given a number n, return the number of positive odd numbers below n, EASY!
 function oddCount(n){
