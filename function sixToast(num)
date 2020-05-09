@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5834fec22fb0ba7d080000e8/train/javascript
+
+function sixToast(num) {
+    let totalToast = 6;
+    let toastsNeeded = totalToast - num;
+    return num === 6? 0 : Math.abs(toastsNeeded = totalToast - num);
+}
