@@ -5,3 +5,7 @@ function sixToast(num) {
     let toastsNeeded = totalToast - num;
     return num === 6? 0 : Math.abs(toastsNeeded = totalToast - num);
 }
+
+function sixToast(num) {
+    return Math.abs(num-6)
+}
