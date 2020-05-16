@@ -13,3 +13,15 @@ var moveZeros = function (arr) {
     }
     return newarr;
 }
+
+var moveZeros = function (arr) {
+    let res = [];
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] !== 0) res.push(arr[i]);
+    }
+    let n = arr.length - res.length;
+    for (let i = 0; i < n; i++){
+        res.push(0);
+    }
+    return res;
+}
