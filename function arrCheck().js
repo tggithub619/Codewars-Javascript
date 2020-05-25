@@ -7,3 +7,4 @@ function arrCheck(arr){
     }
     return count === arr.length
 }
+
