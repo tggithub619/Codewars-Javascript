@@ -6,3 +6,7 @@ function include(arr, item){
     }
     return false;
 }
+
+function include(arr, item){
+  return arr.includes(item);
+}
