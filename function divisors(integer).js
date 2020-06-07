@@ -9,4 +9,10 @@ function divisors(integer) {
     }
     if (arr.length === 0) return integer + " is prime";
     else return arr;
+
 };
+
+function divisors(integer) {
+    for(var div = [], i = 2; i < integer; i++) if(integer % i == 0) div.push(i);
+    return div.length > 0 ? div : integer + " is prime";
+}
