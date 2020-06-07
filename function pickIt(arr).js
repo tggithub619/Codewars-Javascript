@@ -9,3 +9,7 @@ function pickIt(arr){
     }
     return [odd,even];
 }
+
+function pickIt(arr){
+    return [arr.filter(v => v % 2 !== 0), arr.filter(v => v % 2 === 0)];
+}
