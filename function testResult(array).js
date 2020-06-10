@@ -18,3 +18,13 @@ function testResult(array) {
     }
     return (obj['a'] + obj['l'] === 0) ? [sumAvr, obj, 'They did well'] : [sumAvr, obj];
 }
+
+function testResult(array) {
+    let sum = 0;
+    let dic = {"h": 0, "a": 0, "l": 0};
+    for (let s of array) {
+        sum += s;
+        dic[s >= 9 ? "h" : s >= 7 ? "a" : "l"]++;
+    }
+    return [+(sum / array.length).toFixed(3), dic].concat(dic["h"] === array.length ? ["They did well"] : []);
+}
