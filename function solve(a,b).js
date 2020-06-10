@@ -12,3 +12,16 @@ function solve(a, b) {
     else return `${sb}, ${sa}: that looks like a "draw"! Rock on!`;
 
 }
+
+function solve(a, b) {
+    let sumA = 0;
+    let sumB = 0;
+    for ( let i = 0; i < 3; i++ ) {
+        if ( a[i] > b[i]) sumA++
+        else if ( a[i] < b[i]) sumB++
+    }
+    if (sumA > sumB) return `${sumA}, ${sumB}: Alice made "Kurt" proud!`
+    else if (sumA < sumB) return  `${sumA}, ${sumB}: Bob made "Jeff" proud!`
+    else return  `${sumA}, ${sumB}: that looks like a "draw"! Rock on!`
+
+}
