@@ -6,3 +6,8 @@ function well(x){
     if (res > 0) return 'Publish!'
     return 'Fail!'
 }
+
+function well(x){
+    let good = x.filter(el => el ===  'good');
+    return good.length === 0? 'Fail!': good.length > 2? 'I smell a series!': 'Publish!';
+}
