@@ -2,7 +2,7 @@
 
 function well(x){
     let res = x.filter(el => el === 'good').length;
-    if (res > 2) return 'I smell a series!'
+    if (res > 2) return 'I smell a series!';
     if (res > 0) return 'Publish!';
     return 'Fail!'
 }
