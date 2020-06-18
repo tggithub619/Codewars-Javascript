@@ -14,8 +14,8 @@ function correctPolishLetters (string) {
     }
     let res = '';
     for(let el of string){
-        if(obj[el]) res += obj[el]
-        else res += el
+        if(obj[el]) res += obj[el];
+        else res += el;
     }
     return res;
 }
