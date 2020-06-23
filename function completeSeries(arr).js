@@ -15,3 +15,14 @@ function completeSeries(arr) {
     }
     return result;
 }
+
+function completeSeries(arr) {
+    let nondup = arr.filter(el => arr.indexOf(el) !== arr.lastIndexOf(el));
+    let arr1 = []
+    if (nondup.length > 0) return [0]
+    else{
+        for (let i = 0; i <= Math.max(...arr); i++){
+            arr1.push(i)
+        }
+    }return arr1
+}
