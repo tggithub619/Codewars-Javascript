@@ -3,3 +3,13 @@
 function fixTheMeerkat(arr) {
     return arr.reverse()
 }
+
+function fixTheMeerkat(arr) {
+    //your code here
+    var newarr=[];
+    for(var i=arr.length-1;i>=0;i--)
+    {
+        newarr.push(arr[i]);
+    }
+    return newarr;
+}
