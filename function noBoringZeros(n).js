@@ -26,3 +26,6 @@ function noBoringZeros(n) {
 
     return +newStr.join('');
 }
+function noBoringZeros(n) {
+    return +(n + '').replace(/0*$/, '')
+}
