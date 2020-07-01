@@ -44,3 +44,7 @@ function swap(char){
 function DNAStrand(dna){
     return dna.replace(/[ATCG]/g, swap)
 }
+
+function DNAStrand(dna){
+    return dna.replace(/[ATCG]/g, char=> "TACG" ["ATGC".indexOf(char)])
+}
