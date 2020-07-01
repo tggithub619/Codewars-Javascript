@@ -19,3 +19,25 @@ function correctPolishLetters (string) {
     }
     return res;
 }
+
+function swap(char) {
+    let str = 'ąćęłńóśźż';
+    let i = str.indexOf(char);
+    let str2 = 'acelnoszz';
+    return str2[i];
+}
+    function correctPolishLetters (string) {
+        return string.replace(/[ąćęłńóśźż]/g, swap)
+    }
+
+function correctPolishLetters (string) {
+    return string.replace(/ą/g, 'a')
+        .replace(/ć/g, 'c')
+        .replace(/ę/g, 'e')
+        .replace(/ł/g, 'l')
+        .replace(/ń/g, 'n')
+        .replace(/ó/g, 'o')
+        .replace(/ś/g, 's')
+        .replace(/ź/g, 'z')
+        .replace(/ż/g, 'z');
+}
