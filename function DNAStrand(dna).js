@@ -34,3 +34,13 @@ function DNAStrand(dna){
     }
     return res;
 }
+
+function swap(char){
+    let str = 'ATCG';
+    let str2 = 'TAGC';
+    let i = str.indexOf(char);
+    return str2[i];
+}
+function DNAStrand(dna){
+    return dna.replace(/[ATCG]/g, swap)
+}
