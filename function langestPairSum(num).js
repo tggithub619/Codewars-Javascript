@@ -2,5 +2,5 @@
 
 function largestPairSum(num){
     num.sort((a, b) => a - b);
-    return num[num.length-2]+num[num.length-1];
+    return num[num.length-2]+num[num.length-1]
 }
