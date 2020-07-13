@@ -5,9 +5,10 @@ function bigToSmall(arr){
 }
 
 function bigToSmall(arr){
-    let result = [];
+    let res = [];
     for (let i = 0; i<arr.length; i++) {
-        result=result.concat(arr[i])}
-    let sorted = result.sort((a,b)=>b-a).join('>')
-    return sorted;
+        res=res.concat(arr[i]);
+    }
+    res = res.sort((a,b)=>b-a).join('>');
+    return res;
 }
