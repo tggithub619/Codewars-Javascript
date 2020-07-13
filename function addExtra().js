@@ -3,3 +3,7 @@
 function addExtra( listOfNumbers ){
     return [...listOfNumbers,1]
 }
+
+function addExtra(listOfNumbers) {
+    return listOfNumbers.concat(0)
+}
