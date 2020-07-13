@@ -7,6 +7,5 @@ function encode(string) {
 
 
 function decode(string) {
-
     return string.replace(/[1-5]/g, index =>' aeiou'[index]);
 }

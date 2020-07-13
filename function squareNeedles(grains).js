@@ -1,5 +1,5 @@
 function squareNeeded(grains){
-    let squares = 0 ;
+    let squares = 0;
     while (2**squares - 1 < grains){
         squares++;
     }
