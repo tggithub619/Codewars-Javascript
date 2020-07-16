@@ -15,3 +15,16 @@ function toCsvText(array) {
     }
     return str;
 }
+
+function toCsvText(array) {
+    let str = '';
+    for (let i = 0; i < array.length; i++) {
+        str += array[i][0];
+        for (let j = 1; j < array[i].length; j++) {
+            str += ',' + array[i][j];
+        }
+        if (i != array.length - 1)
+            str += "\n";
+    }
+    return str
+}
