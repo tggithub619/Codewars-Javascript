@@ -30,7 +30,7 @@ function DNAStrand(dna){
     }
     let res = '';
     for(let i of dna){
-        res += obj[i]
+        res += obj[i];
     }
     return res;
 }
