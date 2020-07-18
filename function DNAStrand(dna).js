@@ -42,9 +42,9 @@ function swap(char){
     return str2[i];
 }
 function DNAStrand(dna){
-    return dna.replace(/[ATCG]/g, swap)
+    return dna.replace(/[ATCG]/g, swap);
 }
 
 function DNAStrand(dna){
-    return dna.replace(/[ATCG]/g, char=> "TACG" ["ATGC".indexOf(char)])
+    return dna.replace(/[ATCG]/g, char=> "TACG" ["ATGC".indexOf(char)]);
 }
