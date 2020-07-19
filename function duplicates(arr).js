@@ -2,5 +2,5 @@
 
 function duplicates(arr) {
     const duplicates = arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
-    return duplicates
+    return duplicates;
 }
