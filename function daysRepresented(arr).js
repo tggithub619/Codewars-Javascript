@@ -12,9 +12,10 @@ function daysRepresented(arr){
 
 function daysRepresented(trips){
   let arr=[];
-  for (let i=0; i<trips.length; ++i)
-    for (let j=trips[i][0]; j<=trips[i][1]; j++)
-      if (arr.indexOf(j)==-1)
+  for (let i=0; i<trips.length; ++i) {
+    for (let j = trips[i][0]; j <= trips[i][1]; j++)
+      if (arr.indexOf(j) == -1)
         arr.push(j);
+  }
   return arr.length;
 }
