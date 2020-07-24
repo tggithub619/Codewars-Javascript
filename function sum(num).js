@@ -8,3 +8,7 @@ function sum (num) {
     return s;
 
 };
+
+function sum (num) {
+    return (num.length>0) ? num.reduce((acc,curr)=> acc + curr):0
+};
