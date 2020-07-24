@@ -12,3 +12,7 @@ function sum (num) {
 function sum (num) {
     return (num.length>0) ? num.reduce((acc,curr)=> acc + curr):0
 };
+
+function sum (num) {
+    return (num.length>0) ? num.reduce((acc,curr)=> acc + curr):0
+};
