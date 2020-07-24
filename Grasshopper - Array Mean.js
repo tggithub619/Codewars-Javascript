@@ -4,3 +4,12 @@ function findAverage(nums) {
     let l = nums.length;
     return nums.reduce((a, b)=> a+b)/l
 }
+
+function findAverage(nums) {
+    let l = nums.length;
+    let sum = 0;
+    for (let i = 0; i<l; i++){
+        sum+=nums[i]
+    }
+    return sum/l
+}
