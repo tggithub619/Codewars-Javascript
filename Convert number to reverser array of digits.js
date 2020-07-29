@@ -11,3 +11,7 @@ function digitize(n) {
         n=Math.floor(n/10);}
     return arr.reverse();
 }
+
+function digitize(n) {
+    return String(n).split('').map(Number).reverse()
+}
