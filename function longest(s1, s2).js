@@ -19,3 +19,7 @@ function longest(s1, s2) {
 //   }
     return arr;
 }
+function longest(s1, s2) {
+    let s = (s1 + s2).split('').sort();
+    return s.filter((el,i) => i ===s.indexOf(el)).join('')
+}
