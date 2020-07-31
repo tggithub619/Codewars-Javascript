@@ -15,3 +15,17 @@ function divCon(x){
     }
     return sumX-sumAr;
 }
+
+function divCon(x){
+    let str = x.filter(el => typeof(el) === 'string');
+    let sum = 0;
+    for (let el of str){
+        sum = sum + +el;
+    }
+    let num = x.filter(el => typeof(el) === 'number');
+    let numS = 0;
+    for (let el of num){
+        numS = numS + el;
+    }
+    return  numS - sum
+}
