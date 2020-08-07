@@ -5,3 +5,7 @@ function arrayMadness(a, b) {
     let bSum =  b.reduce((x,y)=> x + Math.pow(y,3), 0);
     return (aSum>bSum);
 }
+
+function arrayMadness(a, b) {
+    return a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0)
+}
