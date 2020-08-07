@@ -17,3 +17,10 @@ function firstNonRepeatingLetter(s) {
     }
     return (res == undefined) ? '' : res;
 }
+
+function firstNonRepeatingLetter(s) {
+    let str = s.toLowerCase()
+    let unique = [...str].filter((el, i)=> str.indexOf(el) === str.lastIndexOf(el));
+    if(!unique.length) return '';
+    return s.includes(unique[0]) ? unique[0] : unique[0].toUpperCase();
+}
