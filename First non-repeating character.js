@@ -8,3 +8,12 @@ function firstNonRepeatingLetter(str) {
     }
     return '';
 }
+
+function firstNonRepeatingLetter(s) {
+    let arr = s.toLowerCase().split('');
+    let res = arr.filter((el, i) => i == arr.indexOf(el) && i == arr.lastIndexOf(el))[0];
+    for(let i = 0; i < s.length; i++){
+        if(res == s[i].toLowerCase()){res = s[i]}
+    }
+    return (res == undefined) ? '' : res;
+}
