@@ -9,3 +9,15 @@ function arrayMadness(a, b) {
 function arrayMadness(a, b) {
     return a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0)
 }
+
+function arrayMadness(a,b){
+    let aSum = 0;
+    let bSum = 0;
+    for (let i = 0; i < a.length; i++){
+        aSum = aSum + a[i]**2;
+    }
+    for (let i = 0; i < b.length; i++){
+        bSum = bSum + b[i]**3;
+    }
+    return aSum>bSum;
+}
