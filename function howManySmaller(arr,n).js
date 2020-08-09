@@ -14,3 +14,7 @@ function howManySmaller(arr,n){
     return newArr.length;
 }
 
+function howManySmaller(arr,n){
+    return arr.filter(x => +x.toFixed(2) < n).length;
+}
+
