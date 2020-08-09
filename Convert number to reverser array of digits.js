@@ -13,10 +13,10 @@ function digitize(n) {
 }
 
 function digitize(n) {
-    return String(n).split('').map(Number).reverse()
+    return String(n).split('').map(Number).reverse();
 }
 
 function digitize(n) {
     let str = n+'';
-    return str.split('').reverse().map(el => +el)
+    return str.split('').reverse().map(el => +el);
 }
