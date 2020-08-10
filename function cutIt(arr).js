@@ -29,3 +29,31 @@ function cutIt(arr){
     return arr.map(el => el.slice(0, min))
 
 }
+
+function cutIt(arr){
+    let length = Math.min(...arr.map(el => el.length))
+    return arr.map(el=> el.slice(0, length))
+}
+Solution:
+    1
+function cutIt(arr){
+    2
+    //coding here...
+    3
+
+    4
+}
+Sample Tests:
+    1
+Test.assertSimilar(cutIt(["ab","cde","fgh"]) , ["ab","cd","fg"]);
+2
+Test.assertSimilar(cutIt(["abc","defgh","ijklmn"]) , ["abc","def","ijk"]);
+3
+Test.assertSimilar(cutIt(["codewars","javascript","java"]) , ["code","java","java"]);
+4
+​
+SKIP
+VIEW SOLUTIONS
+DISCUSS (5)
+RESET
+TEST
