@@ -7,3 +7,7 @@ var countSheep = function (num){
     }
     return str
 }
+
+var countSheep = function (n){
+    return [...Array(n)].map((el,i)=> i+1+' sheep...').join('')
+}
