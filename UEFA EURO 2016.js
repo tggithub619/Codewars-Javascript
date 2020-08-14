@@ -12,3 +12,5 @@ function uefaEuro2016(teams, scores){
     }else str = 'teams played draw.';
     return `At match ${teams.slice(0,1)} - ${teams.slice(1)}, ${str}`
 }
+
+`At match ${c[0]} - ${c[1]}, ${s[0] == s[1] ? "commands played draw." : (s[0] > s[1] ? c[0] : c[1]) + ' won!'}`;
