@@ -4,3 +4,7 @@ function digits(n) {
     let str = n +'';
     return str.length
 }
+
+return n.toString().length;
+
+return String(n).length
