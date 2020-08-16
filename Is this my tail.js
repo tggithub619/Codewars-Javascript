@@ -3,3 +3,7 @@
 function correctTail(body, tail){
     return body[body.length-1] === tail
 }
+
+function correctTail(body, tail){
+    return body.endsWith(tail)
+}
