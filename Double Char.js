@@ -7,3 +7,7 @@ function doubleChar(str) {
     }
     return newstr
 }
+
+function doubleChar(str) {
+    return str.split('').map(a=> a+a).join('')
+}
