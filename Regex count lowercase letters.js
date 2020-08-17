@@ -19,3 +19,13 @@ function lowercaseCount(str){
     if (!arr)return 0;
     else return arr.length;
 }
+
+function lowercaseCount(str){
+    let count = 0;
+    for (let i = 0 ; i < str.length; i++){
+        if (typeof(str[i]) === 'string' && str[i] !== str[i].toUpperCase()){
+            count++;
+        }
+    }
+    return count
+}
