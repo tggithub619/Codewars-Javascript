@@ -9,6 +9,10 @@ var uniqueInOrder=function(str){
     return arr
 }
 
-var uniqueInOrder=function(str){
-    return str.split('').filter((el, i, arr) => arr[i] !== arr[i+1])
+var uniqueInOrder=function(iterable){
+    return [...iterable].filter((el, i, res) => res[i] !== res[i+1])
+}
+
+var uniqueInOrder=function(x){
+    return [...x].filter((el, i) => el !== x[i+1])
 }
