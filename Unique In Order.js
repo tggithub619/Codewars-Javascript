@@ -8,3 +8,7 @@ var uniqueInOrder=function(str){
     }
     return arr
 }
+
+var uniqueInOrder=function(str){
+    return str.split('').filter((el, i, arr) => arr[i] !== arr[i+1])
+}
