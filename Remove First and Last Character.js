@@ -5,3 +5,7 @@ function removeChar(str){
 
 };
 
+function removeChar(str){
+    return str.split('').filter((el, i) => i >=1 && i < str.length-1).join('')
+};
+
