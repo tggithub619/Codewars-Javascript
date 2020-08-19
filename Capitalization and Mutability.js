@@ -5,3 +5,19 @@ function capitalizeWord(word) {
     first.push(word[0].toUpperCase());
     return first.concat(word.split('').splice(1)).join('');
 }
+
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+}
+
+function capitalizeWord(word) {
+    return word.replace(word[0], word[0].toUpperCase())
+}
+
+function capitalizeWord(word) {
+    var str = word[0].toUpperCase();
+    for (let i = 1; i<word.length; i++) {
+        str += word[i];
+    }
+    return str;
+}
