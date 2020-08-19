@@ -11,3 +11,8 @@ var capitals = function (word) {
 var capitals = function (word) {
     return word.split('').map((el, i) => (el.toUpperCase() === el)? i: "*").filter(i => 'number' === typeof i)
 };
+
+var capitals = function (word) {
+    let input =  word.split('').map((el, i) => (el.toUpperCase() === el)? i: [])
+    return [].concat(...input)
+};
