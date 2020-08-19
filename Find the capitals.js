@@ -7,3 +7,7 @@ var capitals = function (word) {
     }
     return arr
 };
+
+var capitals = function (word) {
+    return word.split('').map((el, i) => (el.toUpperCase() === el)? i: "*").filter(i => 'number' === typeof i)
+};
