@@ -9,3 +9,8 @@ function billboard(name, price = 30){
     }
     return res
 }
+
+
+function billboard(name, price = 30){
+    return  name.repeat(price).length
+}
