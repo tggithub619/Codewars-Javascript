@@ -41,5 +41,5 @@ function wordsToMarks(string){
     let sum = 0;
     for (let i = 0; i < string.length; i++){
         sum += abc.indexOf(string[i]);
-    } return sum
+    } return sum;
 }
