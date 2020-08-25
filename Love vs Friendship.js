@@ -35,3 +35,11 @@ function wordsToMarks(string){
     }
     return sum
 }
+
+function wordsToMarks(string){
+    let abc = ' abcdefghijklmnopqrstuvwxyz';
+    let sum = 0;
+    for (let i = 0; i < string.length; i++){
+        sum += abc.indexOf(string[i]);
+    } return sum
+}
