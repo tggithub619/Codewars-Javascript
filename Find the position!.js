@@ -3,4 +3,8 @@
 function position(letter) {
     let alph = ' abcdefghijklmnopqrstuvwxyz';
     return `Position of alphabet: ${alph.indexOf(letter)}`;
+    }
+
+function position(letter){
+    return `Position of alphabet: ${"&abcdefghijklmnopqrstuvwxyz".indexOf(letter)}
 }
