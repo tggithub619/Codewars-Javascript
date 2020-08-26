@@ -31,7 +31,7 @@ function wordsToMarks(string){
     }
     let sum = 0
     for (let i = 0; i< string.length; i++){
-        sum+=abc[string[i]]
+        sum+=abc[string[i]];
     }
     return sum
 }
