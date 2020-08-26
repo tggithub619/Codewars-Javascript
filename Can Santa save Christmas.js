@@ -7,7 +7,7 @@ function determineTime(durations){
     durations.map(v=>v.split(':').map((v,i)=>i===0?hours+=v*1:i===1?min+=v*1:sec+=v*1))
     min+=sec/60;
     hours+=min/60;
-    return hours<=24
+    return hours<=24;
 }
 
 function determineTime(durations){
