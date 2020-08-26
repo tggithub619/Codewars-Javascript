@@ -29,7 +29,7 @@ function wordsToMarks(string){
         'y':25,
         'z':26,
     }
-    let sum = 0
+    let sum = 0;
     for (let i = 0; i< string.length; i++){
         sum+=abc[string[i]];
     }
