@@ -3,3 +3,8 @@
 function output() {
     return (typeof a).slice([output, output].length);
 }
+
+
+function output() {
+    return (typeof a).substring([output, output].length);
+}
