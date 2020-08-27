@@ -14,3 +14,7 @@ function createPhoneNumber(numbers){
 
     return format;
 }
+
+function createPhoneNumber(numbers){
+    return numbers.reduce((p,c) => p.replace('x',c), "(xxx) xxx-xxxx");
+}
