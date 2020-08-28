@@ -4,9 +4,9 @@ function shortenToDate(longDate) {
     return longDate.split(',')[0]
 }
 
-
-
-
+function shortenToDate(longDate) {
+    return longDate.slice(0, longDate.indexOf(","));
+}
 
 function shortenToDate(longDate) {
     let res = [];
