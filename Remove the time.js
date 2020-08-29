@@ -26,5 +26,5 @@ function shortenToDate(longDate) {
         i++;
         continue;
     }
-    return longDate.slice(0, i)
+    return longDate.slice(0, i);
 }
