@@ -23,7 +23,7 @@ function shortenToDate(longDate) {
 function shortenToDate(longDate) {
     let i = 0;
     while (longDate[i] !== ',') {
-        i++
+        i++;
         continue;
     }
     return longDate.slice(0, i)
