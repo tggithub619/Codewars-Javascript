@@ -6,7 +6,7 @@ function tailSwap(arr) {
     arr.map(v =>  v.split(":").filter((el, i) => (i%2 === 0)? first.push(el) : second.push(el)))
     second = second.reverse();
     first = first.map((v, i) => v + ":" + second[i]);
-    return first
+    return first;
 }
 
 function tailSwap(arr) {
