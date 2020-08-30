@@ -18,7 +18,7 @@ function maskify(cc) {
     let part1 =[];
     for(let i = 0; i<cc.length-4; i++){
         cc[i] = "#";
-        part1.push(cc[i])
+        part1.push(cc[i]);
     }
     return part1.concat(cc.slice(-4)).join('')
 }
