@@ -20,7 +20,7 @@ function maskify(cc) {
         cc[i] = "#";
         part1.push(cc[i]);
     }
-    return part1.concat(cc.slice(-4)).join('')
+    return part1.concat(cc.slice(-4)).join('');
 }
 
 function maskify(cc) {
