@@ -10,7 +10,7 @@ function maskify(cc) {
         cc[i] = "#";
     }
     cc = cc.join("");
-    return cc
+    return cc;
 }
 
 function maskify(cc) {
