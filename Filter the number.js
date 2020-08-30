@@ -23,3 +23,5 @@ var FilterString = function(value) {
     }
     return +str;
 }
+
+
