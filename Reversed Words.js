@@ -12,3 +12,12 @@ function reverseWords(str){
     }
     return res.join(" ")
 }
+
+function shortcut(string){
+    let str = '';
+    for (let i = 0; i < string.length; i++){
+        if (string[i] !== 'a' && string[i] !== 'e' && string[i] !== 'i' && string[i] !== 'i' &&
+            string[i] !== 'o' && string[i] !== 'u') str += string[i];
+    }
+    return str;
+}
