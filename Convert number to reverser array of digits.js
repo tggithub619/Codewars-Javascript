@@ -22,3 +22,7 @@ function digitize(n) {
     let str = n+'';
     return str.split('').reverse().map(el => +el);
 }
+
+function digitize(n) {
+    return  n.toString().split('').map(el=> +el).reverse()
+}
