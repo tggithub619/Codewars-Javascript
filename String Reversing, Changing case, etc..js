@@ -9,5 +9,5 @@ function withoutReverseMirror(str){
 }
 
 function reverseAndMirror(s1,s2) {
-    return`${withReverseMirror(s2)}@@@${withReverseMirror(s1)}${withoutReverseMirror(s1)}`
+    return`${withReverseMirror(s2)}@@@${withReverseMirror(s1)}${withoutReverseMirror(s1)}`;
 }
