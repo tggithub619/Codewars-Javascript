@@ -5,7 +5,7 @@ function type(value) {
     if (value instanceof Date) return 'date';
     if (value === null) return 'null';
     if (value instanceof Object) return 'object';
-    return typeof value
+    return typeof value;
 }
 
 function type(value) {
