@@ -6,7 +6,7 @@ function redarr(arr) {
     for ( let i=0; i < zeroD.length; i++){
         obj[i]=zeroD[i];
     }
-    return obj
+    return obj;
 }
 
 function redarr(arr) {
