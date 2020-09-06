@@ -4,7 +4,7 @@ function redarr(arr) {
     let zeroD = arr.filter((el, i)  => arr.indexOf(el) === i).sort();
     let obj = {};
     for ( let i=0; i < zeroD.length; i++){
-        obj[i]=zeroD[i]
+        obj[i]=zeroD[i];
     }
     return obj
 }
