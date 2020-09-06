@@ -2,7 +2,6 @@
 
 function redarr(arr) {
     let zeroD = arr.filter((el, i)  => arr.indexOf(el) === i).sort();
-    console.log(zeroD)
     let obj = {};
     for ( let i=0; i < zeroD.length; i++){
         obj[i]=zeroD[i]
