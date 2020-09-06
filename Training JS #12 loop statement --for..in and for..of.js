@@ -11,7 +11,7 @@ function giveMeFive(obj){
 
 function giveMeFive(obj){
     let keys = Object.entries(obj).flat();
-    let values = Object.values(obj)
+    let values = Object.values(obj);
     let arr =  keys.concat(values)
     return arr.filter(el => el.length == 5)
     // for let key in obj
