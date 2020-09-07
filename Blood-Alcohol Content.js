@@ -2,11 +2,11 @@
 
 function bloodAlcoholContent(drinks, weight, sex, time){
     if (sex === 'female') {
-        sex = 0.66
+        sex = 0.66;
     }   else if (sex === 'male'){
-        sex = 0.73
+        sex = 0.73;
     }
-    let bac = ((drinks.ounces * drinks.abv)* 5.14 / weight * sex) - 0.015 * time
+    let bac = ((drinks.ounces * drinks.abv)* 5.14 / weight * sex) - 0.015 * time;
     return +bac.toFixed(4);
 }
 
