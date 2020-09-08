@@ -7,6 +7,5 @@ function initializeNames(name){
             arr[i] =arr[i].slice(0,1)+ '.';
         }
     }
-
     return arr.join(' ');
 }
