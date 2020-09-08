@@ -11,7 +11,7 @@ function capitalizeWord(word) {
 }
 
 function capitalizeWord(word) {
-    return word.replace(word[0], word[0].toUpperCase())
+    return word.replace(word[0], word[0].toUpperCase();
 }
 
 function capitalizeWord(word) {
