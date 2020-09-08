@@ -2,5 +2,5 @@
 
 
 function unusualFive() {
-    return 'table'.length
+    return 'table'.length;
 }
