@@ -2,5 +2,5 @@
 
 function addLength(str) {
     let arr =  str.split(' ').map(el=> el+ ' ' + el.length);
-    return arr
+    return arr;
 }
