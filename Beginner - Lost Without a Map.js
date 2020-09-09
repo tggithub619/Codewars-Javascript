@@ -5,7 +5,7 @@ function maps(x){
 }
 
 function maps(x){
-    let arr =[]
+    let arr =[];
     for (let i = 0; i < x.length; i++) {
         arr.push(x[i]*2)
     }
