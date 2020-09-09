@@ -14,5 +14,5 @@ var isAnagram = function(test, original) {
             count++;
         }
     }
-    return (count === test.length && count === original.length) ? true : false
+    return (count === test.length && count === original.length) ? true : false;
 }
