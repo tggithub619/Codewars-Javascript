@@ -12,7 +12,7 @@ function arrayPlusArray(arr1, arr2) {
         sum1+= arr1[i];
     }
     for (let i =0; i< arr2.length; i++){
-        sum2+= arr2[i]
+        sum2+= arr2[i];
     }
     return sum1+sum2;
 }
