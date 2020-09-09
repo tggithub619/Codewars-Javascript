@@ -2,7 +2,7 @@
 
 function arrayPlusArray(arr1, arr2) {
     let newArr = arr1.concat(arr2);
-    return newArr.reduce((a,b)=> a+b)
+    return newArr.reduce((a,b)=> a+b);
 }
 
 function arrayPlusArray(arr1, arr2) {
