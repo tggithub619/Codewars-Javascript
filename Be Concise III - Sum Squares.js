@@ -8,6 +8,6 @@ function sumSquares(array) {
     return result;
 
     function sumSquares(array) {
-        return array.reduce((a,b) => a+b **2, 0)
+        return array.reduce((a,b) => a+b **2, 0);
     }
 }
