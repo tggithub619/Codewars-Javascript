@@ -19,3 +19,16 @@ function cleanString(s) {
     }
     return n;
 };
+
+function cleanString(s) {
+    let arr = []
+    for(let i = 0; i<s.length; i++){
+        if(s[i] === '#'){
+            arr.pop(s[i])
+            continue
+        }
+        arr.push(s[i])
+    }
+    console.log(arr)
+    return arr.join('')
+};
