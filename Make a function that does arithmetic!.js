@@ -12,3 +12,24 @@ function arithmetic(a, b, operator){
     optable = { "add":"+", "subtract": "-", "multiply": "*" , "divide":"/"};
     return eval(a + optable[operator] + b);
 }
+
+function arithmetic(a, b, operator){
+    return ops[operator](a, b);
+}
+
+const ops = {
+    "add"      : (a, b) => a + b,
+    "subtract" : (a, b) => a - b,
+    "multiply" : (a, b) => a * b,
+    "divide"   : (a, b) => a / b
+}
+
+function arithmetic(a, b, operator){
+    const operadores = {
+        add: a + b,
+        subtract: a - b,
+        multiply: a * b,
+        divide: a / b
+    }
+    return operadores[operator];
+}
