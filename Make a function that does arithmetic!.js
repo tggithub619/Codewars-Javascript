@@ -25,11 +25,11 @@ const ops = {
 }
 
 function arithmetic(a, b, operator){
-    const operadores = {
+    const obj = {
         add: a + b,
         subtract: a - b,
         multiply: a * b,
         divide: a / b
     }
-    return operadores[operator];
+    return obj[operator];
 }
