@@ -28,3 +28,12 @@ function testResult(array) {
     }
     return [+(sum / array.length).toFixed(3), dic].concat(dic["h"] === array.length ? ["They did well"] : []);
 }
+
+function testResult(arr) {
+    let avg = (arr.reduce((a,b) => a + b) / arr.length).toFixed(3);
+    let h = arr.filter(a => a > 8).length;
+    let l = arr.filter(b => b < 7).length;
+    let a = arr.filter(c => c > 6 && c < 9).length;
+    let result = [+avg, {'h': h, 'a': a, 'l': l }];
+    return (l === 0 && a === 0 && h > 0) ? result.concat(['They did well']) : result;
+}
