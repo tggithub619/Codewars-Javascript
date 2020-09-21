@@ -7,3 +7,8 @@ function arithmetic(a, b, op){
     if (op === "divide") return a/b;
 
 }
+
+function arithmetic(a, b, operator){
+    optable = { "add":"+", "subtract": "-", "multiply": "*" , "divide":"/"};
+    return eval(a + optable[operator] + b);
+}
