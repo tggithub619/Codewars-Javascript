@@ -10,3 +10,12 @@ function countDevelopers(list) {
 function countDevelopers(list) {
     return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
 }
+
+function countDevelopers(list) {
+    let count = 0
+    for (let i in list){
+        if(list[i].continent == 'Europe' && list[i].language == 'JavaScript')
+            count++
+    }
+    return count;
+}
