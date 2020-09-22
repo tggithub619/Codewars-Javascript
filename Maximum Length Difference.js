@@ -11,3 +11,9 @@ function mxdiflg(a1, a2) {
     }
     return (max1.length === 0 || max2.length === 0) ? -1 : Math.max(( Math.max(...max1) -  Math.min(...max2)), ( Math.max(...max2) -  Math.min(...max1)));
 }
+
+function mxdiflg(a1, a2) {
+    let m1 = a1.map(el => el.length);
+    let m2 = a2.map(el => el.length);
+    return  (m1.length === 0 || m2.length === 0) ? -1 : Math.max(( Math.max(...m1) -  Math.min(...m2)), ( Math.max(...m2) -  Math.min(...m1)));
+}
