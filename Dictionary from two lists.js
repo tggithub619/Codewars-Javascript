@@ -5,7 +5,7 @@ function createDict(keys, values){
     for (let i = 0; i < keys.length; i++) {
         if (i< values.length ){
             res[keys[i]] = values[i];
-        } else res[keys[i]] = null
+        } else res[keys[i]] = null;
     }
     return res;
 }
