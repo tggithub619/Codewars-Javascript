@@ -12,3 +12,9 @@ function mirror(data) {
     }
     return arr;
 }
+
+function mirror(data) {
+    let dataSorted = [...data].sort((a, b)=> a - b)
+    let dataSortedRev = [...dataSorted].reverse().slice(1)
+    return dataSorted.concat(dataSortedRev)
+}
