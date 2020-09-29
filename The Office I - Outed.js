@@ -3,7 +3,7 @@
 function outed(meet, boss) {
     let teamSize = Object.keys(meet).length;
     let avgHappiness = Object.values(meet).reduce((a, b) => a + b) + meet[boss]
-    return (avgHappiness / teamSize) > 5 ? 'Nice Work Champ!' : 'Get Out Now!'
+    return (avgHappiness / teamSize) > 5 ? 'Nice Work Champ!' : 'Get Out Now!';
 }
 
 function outed(meet, boss){
