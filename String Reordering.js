@@ -19,3 +19,16 @@ function sentence(List) {
     }
     return res.trim();
 }
+
+
+function sentence(List) {
+    let res =[];
+    for (let i=-999;i<= 999; i++){
+        for (let j=0; j<List.length; j++) {
+            if(List[j][i]){
+                res.push(List[j][i])
+            }
+        }
+    }
+    return res.join(' ')
+}
