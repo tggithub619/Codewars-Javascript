@@ -18,3 +18,7 @@ function maxTriSum(num){
     let c = Math.max(...arr2)
     return a+b+c
 }
+
+function maxTriSum(num){
+    return num.sort((a,b)=> a-b).filter((x, i) => num.lastIndexOf(x) === i).slice(-3).reduce((a,b)=> a+b)
+}
