@@ -6,7 +6,7 @@ function maxTriSum(num){
     let a = Math.max(...num);
     for( let i = 0; i<num.length; i++){
         if (num[i] !== a){
-            arr1.push(num[i])
+            arr1.push(num[i]);
         }
     }
     let b = Math.max(...arr1)
