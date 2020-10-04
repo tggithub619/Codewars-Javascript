@@ -1,7 +1,7 @@
 //https://www.codewars.com/kata/5aa1bcda373c2eb596000112/train/javascript
 
 function maxTriSum(num){
-    let arr1 = []
+    let arr1 = [];
     let arr2 = []
     let a = Math.max(...num)
     for( let i = 0; i<num.length; i++){
