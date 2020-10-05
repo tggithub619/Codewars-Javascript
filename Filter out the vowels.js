@@ -9,3 +9,8 @@ function vowelFilter (letters) {
         }}
     return res
 };
+
+function vowelFilter (letters) {
+    var vowels = ["a", "e", "i", "o", "u"];
+    return letters.filter(el => !'aeiou'.includes(el));
+};
