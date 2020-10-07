@@ -6,7 +6,7 @@ function isLucky(n) {
     for(let i=0; i<str.length; i++){
         sum += str[i];
     }
-    return (sum==0 || sum%9==0) ? true : false
+    return (sum==0 || sum%9==0) ? true : false;
 }
 
 function isLucky(n) {
