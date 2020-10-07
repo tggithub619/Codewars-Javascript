@@ -9,3 +9,9 @@ function isLucky(n) {
     return (sum==0 || sum%9==0) ? true : false
 }
 
+function isLucky(n) {
+    return n%9==0;
+}
+
+
+
