@@ -4,7 +4,7 @@ function isLucky(n) {
     let sum = 0;
     let str = n+'';
     for(let i=0; i<str.length; i++){
-        sum += str[i]
+        sum += str[i];
     }
     return (sum==0 || sum%9==0) ? true : false
 }
