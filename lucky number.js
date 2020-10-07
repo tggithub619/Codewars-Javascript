@@ -2,7 +2,7 @@
 
 function isLucky(n) {
     let sum = 0;
-    let str = n+''
+    let str = n+'';
     for(let i=0; i<str.length; i++){
         sum += str[i]
     }
