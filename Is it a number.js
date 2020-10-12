@@ -8,6 +8,6 @@ function isDigit(s) {
     if (s=="") return false
     if (s==" ") return false
     if ((s>0)||(s<=0))
-        return true
-    else return false
+        return true;
+    else return false;
 }
