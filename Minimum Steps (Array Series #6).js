@@ -9,3 +9,14 @@ function minimumSteps(num, v){
     }
 
 }
+
+function minimumSteps(num, v){
+    num = num.sort((a, b) => a - b);
+    let sum = 0;
+    let i = 0;
+    while(sum < v) {
+        sum += num[i];
+        i++;
+    }
+    return i - 1;
+}
