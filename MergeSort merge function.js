@@ -7,3 +7,12 @@ function mergesorted(a, b) {
     }
     return arr.concat(a.length ? a : b);
 }
+
+function mergesorted(a, b) {
+    var r = [];
+    while(a.length && b.length){
+        if(a[0] < b[0]) r.push(a.shift());
+        else r.push(b.shift());
+    }
+    return r.concat(a).concat(b);
+}

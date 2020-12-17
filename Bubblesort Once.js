@@ -1,4 +1,5 @@
-//https://www.codewars.com/kata/56b97b776ffcea598a0006f2
+
+
 
 function bubblesortOnce(a) {
     for (let i = 0; i < a.length; i++) {
