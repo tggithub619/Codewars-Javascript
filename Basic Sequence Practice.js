@@ -21,3 +21,18 @@ function sumOfN(n) {
 }
 
 //sumOfN(-6), [0, -1, -3, -6, -10, -15, -21]
+
+function sumOfN(n) {
+    let arr = [0];
+    let count = 0;
+    let index = Math.abs(n);
+    for(let i = 1; i <= index; i++){
+        count+= i;
+        if (n < 0) {
+            arr.push(-count);
+        } else {
+            arr.push(count);
+        }
+    }
+    return arr;
+};
