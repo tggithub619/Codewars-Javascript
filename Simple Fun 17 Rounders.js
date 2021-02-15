@@ -19,3 +19,12 @@ function rounders(v) {
 // Test.assertEquals( rounders(1445) , 2000)
 //
 // Test.assertEquals( rounders(14) , 10)
+
+function rounders(value) {
+    let i = 0;
+    while(value >= 10){
+        value = Math.round(value / 10);
+        i++;
+    }
+    return value * 10 ** i;
+}
