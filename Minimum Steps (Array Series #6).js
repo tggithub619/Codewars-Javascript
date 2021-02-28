@@ -20,3 +20,6 @@ function minimumSteps(num, v){
     }
     return i - 1;
 }
+// Test.assertEquals(minimumSteps([4,6,3], 7), 1);
+//   Test.assertEquals(minimumSteps([10,9,9,8], 17), 1);
+//   Test.assertEquals(minimumSteps([8,9,10,4,2], 23), 3);
