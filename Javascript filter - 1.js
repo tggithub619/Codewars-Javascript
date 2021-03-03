@@ -3,6 +3,7 @@
 function searchNames( logins ){
     return logins.filter(el=> el[0].endsWith('_'))
     //logins.filter((arr) => arr[0][arr[0].length - 1] === '_');
+    //return login[0].slice(-1) === '_'
 
 }
 
