@@ -11,3 +11,7 @@ function rotate(str){
 }
 
 //rotate("Hello") // => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
+
+function rotate(str){
+    return str.split('').map((x,i) => str.slice(i+1) + str.slice(0,i+1))
+}
